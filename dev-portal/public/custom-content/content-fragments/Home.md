@@ -1,15 +1,15 @@
 ---
-title: Developer Portal
-header: Developer Portal
-tagline: Your gateway to the data.
+title: Swift Weather Solutions Developer Portal
+header: Route Weather Guidance API
+tagline: Your gateway to route weather data.
 gettingStartedButton: Get Started
 apiListButton: Our APIs
 ---
 
-### EXPLORE AND BUILD
+### EXPLORE AND BUILD WITH ROUTEWX
         
-Read the Getting Started guide to learn how to hit the ground running to get an application up and running in no time.
+Read the Getting Started guide to learn how to Register for an API Key and hit the ground running.
 
-See what APIs we have to offer, including extensive documentation, and generated SDKs.
+See what APIs we have to offer, including extensive documentation.
 
 Sign in to manage your subscriptions, see your current usage, get your API Key, and test against our live API.

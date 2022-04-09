@@ -204,3 +204,17 @@ At this point, the authenticated user (Cognito identity) is authorized to access
 The unsubscription process is directly analogous to the subscription process - on 'unsubscribe-complete', the listener function will remove the API Key from the Usage Plan.
 
 -->
+
+## SAM Deploy command for RouteWx Dev Portal
+```bash
+sam deploy --template-file ./cloudformation/packaged.yaml \
+    --stack-name "routewx-api-dev-portal" \
+    --s3-bucket "routewx-dev-portal-lambda-assets" \
+    --capabilities CAPABILITY_NAMED_IAM \
+    --parameter-overrides \
+    DevPortalSiteS3BucketName="routewx-api-dev-portal-static-assets" \
+    ArtifactsS3BucketName="routewx-api-dev-portal-artifacts" \
+    CustomDomainName="api-portal.swiftweather.co" \
+    CustomDomainNameAcmCertArn="arn:aws:acm:us-east-1:991454935152:certificate/7129ab84-65e5-44e7-b6ff-8ecb802ae777" \
+    UseRoute53Nameservers="false"
+```
